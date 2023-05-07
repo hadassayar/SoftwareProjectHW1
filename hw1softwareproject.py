@@ -75,7 +75,7 @@ def build_table(num_of_clusters, input_data):
 
 
 def create_vector(vector):
-    vector[-1] = vector[-1][:len(vector[-1]) - 2]
+    vector[-1] = vector[-1][:len(vector[-1]) - 1]
     for j in range(len(vector)):
         vector[j] = float(vector[j])
     return vector
