@@ -24,7 +24,7 @@ def kmeans(K, iter, input_data):
             if (iter_cnt == 1) and (line_index <= num_of_clusters):
                 vector = list(line.split(","))
                 vector1 = create_vector(vector)
-                clusters.append(vector1)
+                clusters[line_index - 1].append(vector1)
                 continue
             vector = list(line.split(","))
             vector1 = create_vector(vector)
